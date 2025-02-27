@@ -1,0 +1,172 @@
+1) Explain the role of operators in JavaScript. Why are they essential in programming?
+
+Answer - Role of Operators in JavaScript  
+
+Operators in JavaScript are symbols used to perform operations on variables and values. They play a crucial role in programming by enabling calculations, comparisons, logical decisions, and value assignments.  
+
+Types of Operators in JavaScript  
+i. Arithmetic Operators (`+`, `-`, `*`, `/`, `%`, `**`) – Perform mathematical operations.  
+ii. Assignment Operators (`=`, `+=`, `-=`, `*=`, etc.) – Assign values to variables.  
+iii. Comparison Operators (`==`, `===`, `!=`, `<`, `>`, etc.) – Compare values for decision-making.  
+iv. Logical Operators (`&&`, `||`, `!`) – Combine conditions in control structures.  
+v. Bitwise Operators (`&`, `|`, `^`, `<<`, `>>`) – Perform bit-level operations.  
+vi. Ternary Operator (`condition ? expr1 : expr2`) – Provides a shorthand for conditional statements.  
+vii. Type Operators (`typeof`, `instanceof`) – Check variable types.  
+
+Importance of Operators in Programming  
+- Enable efficient data manipulation.  
+- Support decision-making in conditions.  
+- Help perform complex calculations.  
+- Improve code readability and efficiency.  
+
+Operators are essential in JavaScript as they form the foundation for logic and computations within a program. 
+
+2) Describe the categorization of operators in JavaScript based on their functionality. Provide examples for each category.
+
+Answer - Categorization of Operators in JavaScript  
+
+JavaScript operators are categorized based on their functionality:  
+
+i. Arithmetic Operators – Perform mathematical calculations.  
+
+   js -
+
+   let a = 10, b = 5;
+   console.log(a + b); // 15 (Addition)
+   console.log(a - b); // 5  (Subtraction)
+   console.log(a * b); // 50 (Multiplication)
+   console.log(a / b); // 2  (Division)
+   console.log(a % b); // 0  (Modulus)
+   console.log(a ** b); // 100000 (Exponentiation)
+   
+------
+
+ii. Assignment Operators – Assign values to variables.  
+   
+ js -
+
+   let x = 10;
+   x += 5; // x = x + 5 -> 15
+   x *= 2; // x = x * 2 -> 30
+
+-------
+
+iii. Comparison Operators – Compare values and return Boolean results.  
+   
+ js -
+
+   console.log(10 == "10");  // true (loose equality)
+   console.log(10 === "10"); // false (strict equality)
+   console.log(10 > 5);      // true
+  
+ ------
+
+iv. Logical Operators – Combine multiple conditions.  
+   
+ js -
+
+   console.log(true && false); // false
+   console.log(true || false); // true
+   console.log(!true);         // false
+   
+------
+
+v. Bitwise Operators – Operate at the binary level.  
+   
+ js -
+
+   console.log(5 & 1); // 1 (Bitwise AND)
+   console.log(5 | 1); // 5 (Bitwise OR)
+  
+ ------
+
+vi. Ternary Operator – A shorthand for `if-else`.  
+   `
+ js -
+
+   let age = 18;
+   let status = (age >= 18) ? "Adult" : "Minor";  
+   console.log(status); // "Adult"
+
+-------
+
+
+vii. Type Operators – Identify data types.  
+   `
+ js -
+
+   console.log(typeof "Hello"); // "string"
+   console.log(10 instanceof Number); // false
+
+  -------
+
+
+Operators are essential for performing calculations, making decisions, and managing data efficiently in JavaScript. 
+
+3) Differentiate between unary, binary, and ternary operators in JavaScript. Give examples of each. 
+
+Answer - Difference Between Unary, Binary, and Ternary Operators in JavaScript 
+
+i. Unary Operators – Operate on a single operand.  
+ 
+ js -
+
+   let x = 5;
+   console.log(-x);    // -5 (Negation)
+   console.log(++x);   // 6 (Increment)
+   console.log(typeof x); // "number" (Type check)
+ 
+-------
+
+ii. Binary Operators – Require two operands.  
+
+    js -
+
+   let a = 10, b = 5;
+   console.log(a + b); // 15 (Addition)
+   console.log(a > b); // true (Comparison)
+   console.log(a && b); // 5 (Logical AND)
+
+-------
+
+iii. Ternary Operator – Uses three operands for conditional expressions.  
+
+    js -
+
+   let age = 18;
+   let status = (age >= 18) ? "Adult" : "Minor";
+   console.log(status); // "Adult"
+
+--------
+ 
+Unary operates on one value, binary on two, and ternary on three, making operations concise and efficient. 
+
+4) Discuss the precedence and associativity of operators in JavaScript. Why is understanding these concepts important?
+
+Answer - Precedence and Associativity of Operators in JavaScript  
+
+i. Operator Precedence – Determines the order in which operators are evaluated in an expression. Higher precedence operators execute before lower precedence ones.  
+  
+js-
+
+   let result = 10 + 5 * 2; // 10 + (5 * 2) = 20 (Multiplication has higher precedence)
+
+------
+
+   - Highest precedence: `()` (Parentheses)  
+   - Higher precedence: `*`, `/`, `%` (Multiplication, Division, Modulus)  
+   - Lower precedence: `+`, `-` (Addition, Subtraction)  
+
+ii.Operator Associativity** – Defines the direction in which operators of the same precedence level are evaluated.  
+   - Left-to-right associativity: `+`, `-`, `*`, `/`  
+   - Right-to-left associativity: `=`, `**`, ternary (`?:`)  
+  
+ js-
+
+   let x = 5 ** 2 ** 2; // 5 ** (2 ** 2) = 5 ** 4 = 625 (Right-to-left)
+  
+-----
+
+Importance  
+Understanding precedence and associativity ensures correct calculations and prevents unexpected results. It improves code readability and helps in writing efficient expressions.
+
