@@ -1,0 +1,72 @@
+1) Explain what JavaScript is and its role in web development.
+
+Answer - JavaScript is a programming language primarily used for creating interactive and dynamic content on websites. It runs in the browser, enabling features like animations, form validation, and interactive maps. In web development, JavaScript is crucial for front-end development, enhancing user experience alongside HTML and CSS.
+
+2) Explain the key differences between JavaScript and HTML. Provide examples of situations where you would use each.
+
+Answer - JavaScript and HTML serve different roles in web development. HTML (Hypertext Markup Language) is the structure of a webpage, defining its content and layout with elements like headings, paragraphs, links, and images. Example: `<h1>Welcome to My Site</h1>`.
+
+JavaScript, on the other hand, is a scripting language that adds interactivity and dynamic functionality to webpages. It handles tasks like responding to user actions (clicks, form submissions), updating content, or interacting with external APIs. Example: `document.getElementById("btn").addEventListener("click", function() { alert("Hello!"); });`.
+
+Use HTML to build the page structure, and JavaScript for interactivity and dynamic behavior. 
+
+3) List and describe the five primitive data types in JavaScript.
+
+Answer - JavaScript has **five primitive data types**, each with its unique characteristics:
+
+i. Number : Represents both integer and floating-point numbers. JavaScript does not distinguish between different types of numbers, such as integers or decimals. 
+   - Example: `42`, `3.14`
+
+ii. String: Represents a sequence of characters, used for text. Strings are enclosed in single, double, or backticks.
+   - Example: `'Hello'`, `"World"`, `` `JavaScript` ``
+
+iii. Boolean: Represents one of two values: `true` or `false`. It is typically used in conditional statements or loops.
+   - Example: `true`, `false`
+
+iv. Undefined: A variable that has been declared but not assigned a value is automatically assigned the value `undefined`.
+   - Example: `let x; // undefined`
+
+v. Null: Represents the intentional absence of any object value. It is explicitly set by the programmer to indicate that a variable is empty.
+   - Example: `let y = null;`
+
+These primitive types are immutable, meaning their values cannot be changed once assigned.
+
+4) What is the purpose of declaring variables in JavaScript, and how do you declare them using the 'let' keyword?
+
+Answer - The purpose of declaring variables in JavaScript is to store and manage data that can be used and modified throughout the program. Variables help organize data, making it easier to reference and manipulate. In JavaScript, the 'let' keyword is used to declare a block-scoped variable, meaning it is only accessible within the block where it is defined. To declare a variable with 'let', use the syntax: `let variableName = value;`. For example, `let age = 25;` creates a variable `age` and assigns it the value 25. Variables declared with 'let' can be reassigned later in the code.
+
+5) Explain the importance of comments in JavaScript and provide examples of single-line and multi-line comments.
+
+Answer - Comments in JavaScript are important for improving code readability, explaining complex logic, and helping developers understand the code’s purpose. They are not executed by the browser but serve as documentation for anyone working with the code. Single-line comments are created with `//`, and multi-line comments are enclosed in `/*` and `*/`. For example, a single-line comment might look like this: `// This is a single-line comment`. A multi-line comment example is: `/* This is a multi-line comment. It can span multiple lines. */`. Comments are essential for collaboration, debugging, and maintaining code over time.
+
+6) Explain the importance of choosing meaningful and descriptive variable names in JavaScript. Provide an example where using a clear identifier improves code readability.
+
+Answer - Choosing meaningful and descriptive variable names in JavaScript is crucial for improving code readability, maintainability, and collaboration. When variable names clearly represent the data they hold, it becomes easier for developers to understand the code without needing additional explanations or comments. Meaningful names reduce ambiguity and help in identifying what each variable is used for, making the code more self-explanatory.
+
+For instance, if you use generic variable names like `a`, `b`, or `temp`, it can be difficult to understand their purpose within the context of the program. This lack of clarity can lead to confusion, especially in larger codebases, and makes debugging and future updates more challenging. On the other hand, clear and descriptive names can instantly convey the variable’s role, helping developers work more efficiently.
+
+Consider the following example:
+
+javascript
+
+// Less descriptive code
+let a = 100;
+let b = 5;
+let c = a / b;
+console.log(c);
+
+
+In this example, it's unclear what `a`, `b`, and `c` represent. If someone unfamiliar with the code looks at it, they might struggle to understand its purpose.
+
+Now, consider a more descriptive version:
+
+javascript
+
+// More descriptive code
+let totalPrice = 100;
+let discountRate = 5;
+let finalPrice = totalPrice / discountRate;
+console.log(finalPrice);
+
+
+In this improved version, the variable names `totalPrice`, `discountRate`, and `finalPrice` immediately communicate the data each variable holds. A developer can easily identify that the code calculates a price after applying a discount, without needing to analyze the code further. This approach improves readability and reduces the time spent trying to decipher the code, especially when working on larger projects or collaborating with a team.
